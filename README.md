@@ -1,7 +1,7 @@
 # uno
 
 Play uno with bots in your browse.
-https://uno.vercel.app/
+https://uno-eight.vercel.app
 
 ![preview](./preview.jpg)
 
