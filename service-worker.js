@@ -20,13 +20,16 @@ self.addEventListener("fetch", (event) => {
           return response;
         }
 
-        // 克隆响应,因为它只能使用一次
-        const responseToCache = response.clone();
+        // 检查请求的协议是否为 http 或 https
+        if (event.request.url.startsWith("http")) {
+          // 克隆响应,因为它只能使用一次
+          const responseToCache = response.clone();
 
-        // 将新响应添加到缓存
-        caches.open(CACHE_NAME).then((cache) => {
-          cache.put(event.request, responseToCache);
-        });
+          // 将新响应添加到缓存
+          caches.open(CACHE_NAME).then((cache) => {
+            cache.put(event.request, responseToCache);
+          });
+        }
 
         return response;
       });
