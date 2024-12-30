@@ -1,5 +1,5 @@
 {
-  "name": "Classic Uno Game",
+  "name": "Uno Card Game",
   "short_name": "Uno",
   "description": "Play Uno card game with bots in your browser",
   "start_url": "/",
@@ -9,7 +9,7 @@
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "48x48",
+      "sizes": "32x32",
       "type": "image/x-icon"
     }
   ]

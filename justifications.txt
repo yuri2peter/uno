@@ -1,0 +1,5 @@
+JUSTIFICATIONS
+
+No chrome.api permissions were used for this extension.
+Also, the plan executor (service worker) was not used. 
+And because the extension does not require an online connection, the offline_enabled parameter is defined as true.

@@ -1,0 +1,7 @@
+Improved layout planning for menu and page. A more useful and visual output was obtained. Fixed compatibility issues in fullscreen mode and fixed passive bugs.
+
+Visual (logo and image) and audio (effect sounds) media were used exactly the same. Written content is customized.
+
+Improvements have been completed in accordance with the current v3 version of Chrome.
+
+https://www.loom.com/share/577440a1e722427099b0aa94b51899bd

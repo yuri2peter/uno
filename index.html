@@ -1,62 +1,33 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#f0f0f1">
-	<title>Classic Uno Game</title>
-    <link rel="shortcut icon" href="TemplateData/img/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/css/style.css">
-    <link rel="manifest" href="manifest.json">
-    <link rel="apple-touch-icon" href="TemplateData/img/icon-192.png">
+	<title>COLOR4 - AI POWERED</title>
+	<link rel="stylesheet" href="css/reset.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link rel="stylesheet" href="css/orientation_utils.css" type="text/css">
+	<link rel="stylesheet" href="css/ios_fullscreen.css" type="text/css">
+	<link rel='shortcut icon' type='image/x-icon' href='./favicon.ico' />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+	<meta name="msapplication-tap-highlight" content="no" />
+
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/lib/create.js"></script>
+	<script type="text/javascript" src="js/lib/howler.js"></script>
+
+	<script type="text/javascript" src="js/lang.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/ext.js"></script>
 </head>
-<body>
-  
-		<div class="keepRatio">
-		<div id="gameContainer" class="unity-desktop webgl-content">
-			<canvas id="gameCanvas"></canvas>
-			<div id="loadingBlock">
-				<img class="logo" src="TemplateData/img/Logo.png"></img>
-				<span class="subtitle"><br>
-				</span>
-			
-				<div id="progressBar">
-					<div>LOADING ...</div>
-					<div class="centered">
-						<div id="emptyBar"></div>
-						<div id="fullBar"></div>
-					</div>
-				</div>
-				
-				<div id="warningBrowserBlock" style="display:none;">
-					<div class="warningBrowserText">
-					</div>
-					<div class="browserIcons">
-					</div>
-				</div>
-				<div id="warningMobileBlock" style="display:none;">
-					<div class="warningBrowserText">
-						Please note that Unity WebGL is not currently supported on mobiles.
-					</div>
-				</div>
-			</div>
-		
-			<div id="errorBrowserBlock" style="display:none;">
-				<img class="logo" src="TemplateData/img/Logo.png"></img>
-				<span class="subtitle">  <br>
-				</span>
-				
-				<div id="errorContent" style="display:none;">
-					<div class="errorBrowserText">
-					</div>
-					<div class="browserIcons">
-					</div>
-				</div>
-			</div>
-			
-		</div>
-    </div>
-    <script src="game.js"></script>
-  </body>
+<body ondragstart="return false;" ondrop="return false;">
+	<div style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%"></div>
+	<canvas id="canvas" class='ani_hack' width="1920" height="1080"> </canvas>
+	<div data-orientation="landscape" class="orientation-msg-container">
+		<p class="orientation-msg-text">Rotate your device</p>
+	</div>
+	<div id="block_game" style="position: fixed; background-color: transparent; top: 0px; left: 0px; width: 100%; height: 100%; display:none">
+	</div>
+</body>
 </html>
